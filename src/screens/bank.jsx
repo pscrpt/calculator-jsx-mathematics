@@ -4,6 +4,7 @@ function Bank() {
 
 
     const [page, setPage] = useState("menu");
+    const [amount, setAmount] = useState(0);
 
     const [result, setResult] = useState(0);
     const [result2, setResult2] = useState(0);
@@ -19,14 +20,25 @@ function Bank() {
 
     // снятие
     function btn2() {
-        setResult(Number(result) - Number(withdraw));
-        setWithdraw(0);
+        if (Number(withdraw) <= Number(result)) {
+            setResult(Number(result) - Number(withdraw));
+            setWithdraw(0);
+        } else {
+            alert("Недостаточно средств!");
+        }
     }
+
     // обмен
     function btn3() {
-        setResult2(+(Number(result) / Number(exchange)).toFixed(2));
-        setExchange(0);
+        if (Number(amount) <= Number(result)) {
+            const dollars = (Number(amount) / Number(exchange)).toFixed(2);
 
+            setResult2(Number(result2) + Number(dollars));
+            setResult(Number(result) - Number(amount));
+            setAmount(0);
+        } else {
+            alert("Недостаточно средств!");
+        }
     }
 
     return (
@@ -149,8 +161,8 @@ function Bank() {
                             <input
                                 type="number"
                                 className="form-control"
-                                value={exchange}
-                                onChange={(e) => setExchange(e.target.value)}
+                                value={amount}
+                                onChange={(e) => setAmount(e.target.value)}
                                 placeholder="Введите сумму"
                             />
 
