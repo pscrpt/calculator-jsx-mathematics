@@ -59,7 +59,7 @@ function Credit() {
 
         }
 
-
+        setMonths(arr);
 
     }
 
