@@ -209,6 +209,18 @@ function Customscalculator() {
                         {result3} $
                     </h1>
                 </div>
+
+                  <a href="/ipoteka"> <button
+                        className={`btn flex-fill ${mode === "basic"
+                            ? "btn-primary"
+                            : "text-white"
+                            }`}
+                       
+
+                    >
+                        IPOTEKA
+                    </button></a>  
+                
             </div>
         </div >
     );
