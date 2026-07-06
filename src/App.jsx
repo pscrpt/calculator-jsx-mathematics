@@ -19,6 +19,8 @@ import Oma from './screens/oma'
 import Acceleration from './screens/acceleration'
 import Three from './screens/three'
 import Energy from './screens/energy'
+import Cinemahome from './screens/cinemahome'
+import Film from './screens/film'
 
 
 
@@ -50,6 +52,8 @@ function App() {
           <Route path="/acceleration" element={<Acceleration />} />
           <Route path="/three" element={<Three />} />
           <Route path="/energy" element={<Energy />} />
+          <Route path="/cinemahome" element={<Cinemahome />} />
+          <Route path="/film" element={<Film />} />
 
      
 
