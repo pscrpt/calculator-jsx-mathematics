@@ -249,6 +249,16 @@ function Credit() {
                             Считать
                         </button>
 
+
+                         <a href="/physicst">     <button
+                            className="btn btn-warning rounded-pill px-5 py-3 fw-bold"
+                         
+                        >
+                           NEXT
+                        </button>
+                        </a> 
+
+
                     </div>
 
 
