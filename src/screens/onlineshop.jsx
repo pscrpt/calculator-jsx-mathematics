@@ -199,9 +199,7 @@ function Onlineshop() {
                                     <button onClick={() => del1(index)}>
                                         <i className="fa-solid fa-trash"></i>
                                     </button>
-                                    <button onClick={() => edit1(index)}>
-                                        <i class="fa-regular fa-pen-to-square"></i>
-                                    </button>
+                                 
                                 </td>
                             </tr>
                         ))}
