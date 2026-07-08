@@ -45,35 +45,35 @@ function Film() {
             <div className="page1">
 
                 <input className="ch1" type="checkbox"
-                    onChange={(e)=>calcPrice(e,1)}
+                    onChange={(e) => calcPrice(e, 1)}
                 />
 
                 <input className="ch1" type="checkbox"
-                    onChange={(e)=>calcPrice(e,2)}
+                    onChange={(e) => calcPrice(e, 2)}
                 />
 
                 <input className="ch1" type="checkbox"
-                    onChange={(e)=>calcPrice(e,3)}
+                    onChange={(e) => calcPrice(e, 3)}
                 />
 
                 <input className="ch1" type="checkbox"
-                    onChange={(e)=>calcPrice(e,4)}
+                    onChange={(e) => calcPrice(e, 4)}
                 />
 
                 <input className="ch1" type="checkbox"
-                    onChange={(e)=>calcPrice(e,5)}
+                    onChange={(e) => calcPrice(e, 5)}
                 />
 
                 <input className="ch1" type="checkbox"
-                    onChange={(e)=>calcPrice(e,6)}
+                    onChange={(e) => calcPrice(e, 6)}
                 />
 
                 <input className="ch1" type="checkbox"
-                    onChange={(e)=>calcPrice(e,7)}
+                    onChange={(e) => calcPrice(e, 7)}
                 />
 
                 <input className="ch1" type="checkbox"
-                    onChange={(e)=>calcPrice(e,8)}
+                    onChange={(e) => calcPrice(e, 8)}
                 />
 
             </div>
@@ -82,7 +82,7 @@ function Film() {
 
                 <select
                     value={sel}
-                    onChange={(e)=>setSel(e.target.value)}
+                    onChange={(e) => setSel(e.target.value)}
                 >
                     <option value="1">12:00</option>
                     <option value="2">17:00</option>
