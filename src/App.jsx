@@ -21,6 +21,7 @@ import Three from './screens/three'
 import Energy from './screens/energy'
 import Cinemahome from './screens/cinemahome'
 import Film from './screens/film'
+import Onlineshop from './screens/onlineshop'
 
 
 
@@ -54,6 +55,7 @@ function App() {
           <Route path="/energy" element={<Energy />} />
           <Route path="/cinemahome" element={<Cinemahome />} />
           <Route path="/film" element={<Film />} />
+          <Route path="/onlineshop" element={<Onlineshop />} />
 
      
 

@@ -485,17 +485,150 @@ body {
     margin-left: 250px;
     margin-bottom: 60px;
 }
-.btn{
+
+.btn {
     .btn-new {
-    border-radius: 10px;
-    color: white;
-    transition: .2s linear;
-    background: #0B63F6;
+        border-radius: 10px;
+        color: white;
+        transition: .2s linear;
+        background: #0B63F6;
+    }
+
+    .btn-new:hover {
+        -webkit-transform: rotateZ(5deg);
+        -ms-transform: rotateZ(5deg);
+        transform: rotateZ(5deg);
+    }
 }
 
-.btn-new:hover {
-    -webkit-transform: rotateZ(5deg);
-    -ms-transform: rotateZ(5deg);
-    transform: rotateZ(5deg);
+
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
 }
+
+body {
+    background: linear-gradient(to right, #3696b4, #63d7f1);
+}
+
+.shop {
+    width: 1100px;
+    margin: 40px auto;
+}
+
+.title {
+    text-align: center;
+    color: white;
+    margin-bottom: 30px;
+    font-size: 42px;
+    font-weight: 300;
+}
+
+.cart {
+    background: white;
+    border-radius: 4px;
+    overflow: hidden;
+    margin-bottom: 50px;
+}
+
+.cart-header {
+    background: #eaf3fb;
+    padding: 15px;
+    font-size: 18px;
+    color: #444;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+th,
+td {
+    padding: 20px;
+    text-align: left;
+    border-bottom: 1px solid #eee;
+}
+
+.bottom {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 20px;
+    padding: 20px;
+}
+
+.bottom h2 {
+    font-size: 30px;
+    font-weight: 400;
+}
+
+.bottom button {
+    padding: 12px 30px;
+    background: #59d0ef;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+.cards {
+    display: flex;
+    justify-content: space-between;
+}
+
+.card6 {
+    width: 240px;
+    background: white;
+    border-radius: 4px;
+    overflow: hidden;
+}
+
+.img {
+    height: 240px;
+    background: #dcdcdc;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #777;
+    font-size: 34px;
+}
+
+.info {
+    padding: 15px;
+}
+
+.info h3 {
+    font-size: 20px;
+    margin-bottom: 8px;
+    font-weight: 400;
+}
+
+.info p {
+    color: #40b5d7;
+    font-size: 22px;
+    margin-bottom: 15px;
+}
+
+.action {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.action input {
+    width: 90px;
+    height: 35px;
+    padding-left: 10px;
+}
+
+.action button {
+    background: none;
+    border: none;
+    color: #2da6d0;
+    cursor: pointer;
+    font-size: 15px;
 }
