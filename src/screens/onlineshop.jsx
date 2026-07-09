@@ -199,7 +199,7 @@ function Onlineshop() {
                                     <button onClick={() => del1(index)}>
                                         <i className="fa-solid fa-trash"></i>
                                     </button>
-                                 
+
                                 </td>
                             </tr>
                         ))}
