@@ -23,6 +23,7 @@ import Cinemahome from './screens/cinemahome'
 import Film from './screens/film'
 import Onlineshop from './screens/onlineshop'
 import Drugstore from './screens/drugstore'
+import Menu from './screens/menu'
 
 
 
@@ -59,6 +60,7 @@ function App() {
           <Route path="/film" element={<Film />} />
           <Route path="/onlineshop" element={<Onlineshop />} />
           <Route path="/drugstore" element={<Drugstore />} />
+          <Route path="/menu" element={<Menu />} />
 
      
 
