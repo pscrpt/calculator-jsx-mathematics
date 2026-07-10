@@ -22,6 +22,8 @@ import Energy from './screens/energy'
 import Cinemahome from './screens/cinemahome'
 import Film from './screens/film'
 import Onlineshop from './screens/onlineshop'
+import Drugstore from './screens/drugstore'
+
 
 
 
@@ -56,6 +58,7 @@ function App() {
           <Route path="/cinemahome" element={<Cinemahome />} />
           <Route path="/film" element={<Film />} />
           <Route path="/onlineshop" element={<Onlineshop />} />
+          <Route path="/drugstore" element={<Drugstore />} />
 
      
 
