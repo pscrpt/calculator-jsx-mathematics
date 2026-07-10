@@ -40,7 +40,7 @@ function Drugstore() {
     }
 
     function minus2(index) {
-        let newMas = [...mas2];
+        let newMas2 = [...mas2];
 
         if (newMas2[index].count > 1) {
             newMas2[index].count--;
