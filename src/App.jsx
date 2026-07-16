@@ -24,6 +24,7 @@ import Film from './screens/film'
 import Onlineshop from './screens/onlineshop'
 import Drugstore from './screens/drugstore'
 import Menu from './screens/menu'
+import Barbershop from './screens/barbershop'
 
 
 
@@ -61,8 +62,9 @@ function App() {
           <Route path="/onlineshop" element={<Onlineshop />} />
           <Route path="/drugstore" element={<Drugstore />} />
           <Route path="/menu" element={<Menu />} />
+          <Route path="/barbershop" element={<Barbershop />} />
 
-     
+
 
 
         </Routes>
