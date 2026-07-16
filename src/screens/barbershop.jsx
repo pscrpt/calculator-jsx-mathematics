@@ -15,11 +15,28 @@ function Barbershop() {
     };
     //ИМЯ
 
+
+//ЦЕНА
+
+    const servicePrices = {
+        "Не выбрано": "0 руб.",
+        "Стрижка Женская": "1500 руб.",
+        "Стрижка Мужская": "1000 руб.",
+        "Стрижка Детская": "700 руб.",
+        "Укладка": "1200 руб.",
+        "Очищение": "800 руб."
+    };
+//ЦЕНА
+
+
+
+
     /*ИМЯ барбера + селект*/
     const [selectedName, setSelectedName] = useState('Не выбрано');
     const [selectedTime, setSelectedTime] = useState('Не выбрано');
     const [selectedDate, setSelectedDate] = useState('Не выбрано');
     const [selectedService, setSelectedService] = useState('Не выбрано');
+    const [resultprice, setResultPrice] = useState('');
 
     const [resultnameb, setResultNamee] = useState('');
     const [resulttime, setResultTime] = useState('');
@@ -31,6 +48,7 @@ function Barbershop() {
         setResultTime(selectedTime);
         setResultDate(selectedDate);
         setResultService(selectedService);
+        setResultPrice(servicePrices[selectedService]);
     };
     /*ИМЯ барбера + селект*/
 
@@ -873,6 +891,11 @@ function Barbershop() {
                                     Место</span>
                                 <b>Barber Shop</b>
                             </div>
+                            <div>
+                                <span><i class="fa-solid fa-receipt ic-u"></i>
+                                    Цена</span>
+                                <big><big><b>{resultprice}</b></big> </big>
+                            </div>
 
 
                         </div>
@@ -1142,6 +1165,10 @@ function Barbershop() {
                         <div>
                             Время:
                             <b> {resulttime}</b>
+                        </div>
+                        <div>
+                            Цена:
+                            <big><b> {resultprice}</b></big>
                         </div>
 
 
