@@ -42,7 +42,7 @@ function Barbershop() {
     const [resulttime, setResultTime] = useState('');
     const [resultDate, setResultDate] = useState('');
     const [resultservice, setResultService] = useState('');
-    service
+  
     const handleButtonClickSelect = () => {
         setResultNamee(selectedName);
         setResultTime(selectedTime);
