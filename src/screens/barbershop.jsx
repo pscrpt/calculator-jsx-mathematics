@@ -1079,6 +1079,10 @@ function Barbershop() {
 
                         <select className="selectBox" onChange={(e) => setSelectedDate(e.target.value)}>
 
+                            <option value="Не выбрано">
+                                Выберите дату
+                            </option>
+
                             <option value="Сегодня, 16 июля">
                                 Сегодня, 16 июля
                             </option>
@@ -1109,6 +1113,10 @@ function Barbershop() {
 
 
                         <select onChange={(e) => setSelectedTime(e.target.value)} className="selectBox">
+
+                            <option value="Не выбрано">
+                                Выберите время
+                            </option>
 
                             <option value="14:30">
                                 14:30
