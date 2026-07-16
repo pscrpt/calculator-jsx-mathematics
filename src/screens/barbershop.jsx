@@ -16,7 +16,7 @@ function Barbershop() {
     //ИМЯ
 
 
-//ЦЕНА
+    //ЦЕНА
 
     const servicePrices = {
         "Не выбрано": "0 руб.",
@@ -26,7 +26,7 @@ function Barbershop() {
         "Укладка": "1200 руб.",
         "Очищение": "800 руб."
     };
-//ЦЕНА
+    //ЦЕНА
 
 
 
@@ -42,7 +42,7 @@ function Barbershop() {
     const [resulttime, setResultTime] = useState('');
     const [resultDate, setResultDate] = useState('');
     const [resultservice, setResultService] = useState('');
-  
+
     const handleButtonClickSelect = () => {
         setResultNamee(selectedName);
         setResultTime(selectedTime);
@@ -88,18 +88,18 @@ function Barbershop() {
 
                         <div className="text">
 
-                            <h1>Welcome Gobars</h1>
+                            <h1>Добро Пожаловать</h1>
 
                             <p>
-                                Find the best grooming experience in your city with just one tap!
-                                Don't miss out on the haircut or treatment of your dreams.
-                                Let's start now!
+                                Найдите лучшие услуги по уходу за собой в вашем городе всего одним касанием!
+                                Не упустите возможность получить стрижку или процедуру своей мечты.
+                                Начнем прямо сейчас!
                             </p>
 
                         </div>
 
 
-                        <button className="button1" onClick={() => setPage("all2")}>Get Started</button>
+                        <button className="button1" onClick={() => setPage("all2")}>Начать</button>
 
                         <div className="home3">
                             <div className="line3"></div>
@@ -126,34 +126,34 @@ function Barbershop() {
                     <div className="containerLogin">
 
                         <div className="titleBox">
-                            <h1>Welcome back 👋</h1>
+                            <h1>Добро пожаловать 👋</h1>
                             <p>
-                                Please enter your login information below to access your account
+                                Пожалуйста, введите свои учетные данные ниже, чтобы получить доступ к своему аккаунту.
                             </p>
                         </div>
 
                         <div className="form">
 
                             <div className="inputBox">
-                                <label>Email / Name</label>
-                                <input onChange={(e) => setInputValue(e.target.value)} type="email" placeholder="Enter your email / name" />
+                                <label>Электронная почта / Имя</label>
+                                <input onChange={(e) => setInputValue(e.target.value)} type="email" placeholder="Введите ваш адрес электронной почты / имя" />
                             </div>
 
                             <div className="inputBox">
-                                <label>Password</label>
-                                <input type="password" placeholder="Enter your password" />
+                                <label>Пароль</label>
+                                <input type="password" placeholder="Введите свой пароль" />
                             </div>
 
-                            <p className="forgot">Forgot password?</p>
+                            <p className="forgot">Забыли пароль?</p>
 
                         </div>
-                        <button className="loginBtn" onClick={handleButtonClick} >Save</button>
+                        <button className="loginBtn" onClick={handleButtonClick} >Сохранять</button>
 
-                        <button className="loginBtn" onClick={() => setPage("all3")}>Login</button>
+                        <button className="loginBtn" onClick={() => setPage("all3")}>Авторизоваться</button>
 
                         <p className="register">
-                            Don't have an account?
-                            <span> Register</span>
+                            У вас нет аккаунта?
+                            <span> Зарегистрироваться</span>
                         </p>
 
 
@@ -247,7 +247,7 @@ function Barbershop() {
                     <div onClick={() => setPage("all4")} className="cardInfo">
 
                         <h3>
-                            Master piece Barbershop - Haircut styling
+                            Мастер-класс по парикмахерскому искусству - стрижка и укладка волос.
                         </h3>
 
                         <p>
@@ -341,7 +341,7 @@ function Barbershop() {
                                         <path fill-rule="evenodd" clip-rule="evenodd" d="M7.00016 12.8333C9.57749 12.8333 11.6668 10.744 11.6668 8.16667C11.6668 5.58934 9.57749 3.5 7.00016 3.5C4.42283 3.5 2.3335 5.58934 2.3335 8.16667C2.3335 10.744 4.42283 12.8333 7.00016 12.8333ZM7.00016 6.41667C6.83446 6.41667 6.72363 6.61549 6.50197 7.01313L6.44462 7.11601C6.38163 7.22901 6.35013 7.2855 6.30103 7.32278C6.25192 7.36006 6.19076 7.3739 6.06844 7.40158L5.95708 7.42677C5.52664 7.52416 5.31142 7.57286 5.26021 7.73752C5.20901 7.90218 5.35573 8.07375 5.64918 8.4169L5.7251 8.50568C5.80849 8.60319 5.85018 8.65195 5.86894 8.71227C5.8877 8.77258 5.88139 8.83764 5.86879 8.96774L5.85731 9.08619C5.81294 9.54402 5.79076 9.77294 5.92481 9.8747C6.05887 9.97647 6.26038 9.88369 6.66341 9.69812L6.76767 9.65011C6.8822 9.59738 6.93946 9.57101 7.00016 9.57102C7.06086 9.57102 7.11813 9.59738 7.23265 9.65011L7.33692 9.69812C7.73994 9.88369 7.94146 9.97647 8.07551 9.8747C8.20957 9.77294 8.18738 9.54402 8.14302 9.08619L8.13154 8.96774C8.11894 8.83764 8.11263 8.77258 8.13139 8.71227C8.15014 8.65195 8.19184 8.60319 8.27522 8.50569L8.35115 8.4169C8.64459 8.07376 8.79132 7.90218 8.74011 7.73752C8.68891 7.57286 8.47369 7.52416 8.04324 7.42677L7.93188 7.40158C7.80956 7.3739 7.7484 7.36006 7.6993 7.32278C7.65019 7.2855 7.6187 7.22901 7.55571 7.11601L7.49836 7.01313C7.2767 6.61549 7.16586 6.41667 7.00016 6.41667Z" fill="white" />
                                         <path d="M6.41683 1.16699H7.5835C8.68344 1.16699 9.23341 1.16699 9.57512 1.5087C9.91201 1.84559 9.91676 2.3849 9.91683 3.45408C9.06965 2.92867 8.07033 2.62533 7.00016 2.62533C5.92999 2.62533 4.93067 2.92867 4.0835 3.45408C4.08356 2.3849 4.08832 1.84559 4.4252 1.5087C4.76691 1.16699 5.31688 1.16699 6.41683 1.16699Z" fill="white" />
                                     </svg>
-                                    Platinum
+                                    Платина
                                 </div>
 
                                 <h2>{resultName}</h2>
@@ -387,7 +387,7 @@ function Barbershop() {
                     <div className="settingsBox">
 
 
-                        <h4>Setting</h4>
+                        <h4>Параметр</h4>
 
 
 
@@ -398,7 +398,7 @@ function Barbershop() {
                         <div className="settingItem">
 
                             <span>
-                                Account
+                                Учетная запись
                             </span>
 
                             <b>›</b>
@@ -410,7 +410,7 @@ function Barbershop() {
                         <div className="settingItem">
 
                             <span>
-                                Security
+                                Безопасность
                             </span>
 
                             <b>›</b>
@@ -422,7 +422,7 @@ function Barbershop() {
                         <div className="settingItem">
 
                             <span>
-                                Help
+                                Помощь
                             </span>
 
                             <b>›</b>
@@ -435,7 +435,7 @@ function Barbershop() {
 
 
                         <button className="logout">
-                            Logout
+                            Выход
                         </button>
 
 
@@ -497,7 +497,7 @@ function Barbershop() {
 
                     {/* HEADER */}
                     <div className="chatHeader">
-                        <h3>Chat</h3>
+                        <h3>Чаты</h3>
                     </div>
 
 
@@ -534,7 +534,7 @@ function Barbershop() {
                             </svg>
 
                             <input
-                                placeholder="Search chat"
+                                placeholder="Поиск чата"
                             />
 
                         </div>
@@ -676,7 +676,7 @@ function Barbershop() {
                         />
 
                         <div className="userInfo">
-                            <h3>Twinsky Monkey Barber</h3>
+                            <h3>Twinsky Monkey Барбер</h3>
                             <p>
                                 <span className="online"></span>
                                 Online
