@@ -212,7 +212,6 @@ function Menu() {
 
                                         <big><big><big><b>{item.count}</b> </big> </big></big>
 
-                                        <button className="add" onClick={() => plus1(index)}>+</button>
                                         <big><big><b>Добавлено в корзину✅</b></big></big>
 
 
@@ -248,7 +247,6 @@ function Menu() {
                                         <big><big><big><b>{item.count}</b> </big> </big></big>
 
 
-                                        <button className="add" className="add" onClick={() => plus2(index)}>+</button>
                                         <big><big><b>Добавлено в корзину✅</b></big></big>
 
                                     </div>
@@ -372,18 +370,14 @@ function Menu() {
 
             {/* НИЖНЯЯ НАВИГАЦИЯ */}
             <div className="bottom7">
-                <div className={activeTab === "home" ? "selected" : ""} onClick={() => setActiveTab("home")}>
-                    🏠<p>Башкы</p>
-                </div>
+                
                 <div className={activeTab === "menu" ? "selected" : ""} onClick={() => setActiveTab("menu")}>
                     🍽<p>Меню</p>
                 </div>
                 <div className={activeTab === "cart" ? "selected" : ""} onClick={() => setActiveTab("cart")}>
                     🛒<p>Себет</p>
                 </div>
-                <div className={activeTab === "orders" ? "selected" : ""} onClick={() => setActiveTab("orders")}>
-                    📋<p>Заказдар</p>
-                </div>
+               
                 <div className={activeTab === "profile" ? "selected" : ""} onClick={() => setActiveTab("profile")}>
                     👤<p>Профиль</p>
                 </div>

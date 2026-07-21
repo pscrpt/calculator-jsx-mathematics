@@ -5094,3 +5094,644 @@ color: #0f316a;
     box-shadow:0 5px 15px #0003;
 
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*меню2*/
+
+/* Navbar */
+.navbar1 .navbar {
+    background: #1f1b1b !important;
+    padding: 18px 40px;
+}
+
+.navbar1 .container-fluid {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+/* Логотип */
+.navbar-brand {
+    color: white !important;
+    font-size: 38px;
+    font-family: Georgia, serif;
+    font-weight: 500;
+    text-decoration: none;
+}
+
+.ristorante2 {
+    color: #c9a24a;
+    font-weight: bold;
+}
+
+/* Меню */
+.menu2text {
+    display: flex;
+    gap: 60px;
+}
+
+.menu2text a {
+    color: #c7c7c7;
+    text-decoration: none;
+    font-size: 20px;
+    font-weight: 600;
+    transition: .3s;
+}
+
+.menu2text a:hover {
+    color: white;
+}
+
+/* Кнопки */
+.menu2btn1 {
+    width: 120px;
+    height: 50px;
+    border-radius: 12px;
+    border: 1px solid #5a5a5a;
+    background: transparent;
+    color: white;
+    font-size: 18px;
+    font-weight: 600;
+    margin-right: 15px;
+    transition: .3s;
+}
+
+.menu2btn1:hover {
+    background: white;
+    color: #1f1b1b;
+}
+
+.menu2btn2 {
+    width: 170px;
+    height: 50px;
+    border-radius: 12px;
+    border: none;
+    background: #c9a24a;
+    color: white;
+    font-size: 18px;
+    font-weight: 600;
+    transition: .3s;
+}
+
+.menu2btn2:hover {
+    background: #b18d3c;
+}
+
+.navbar-toggler,
+.navbar-collapse {
+    box-shadow: none;
+}
+
+
+/* Адаптивность */
+@media (max-width: 768px) {
+    .navbar1 .container-fluid {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .menu2text {
+        gap: 30px;
+    }
+
+    .menu2btn1,
+    .menu2btn2 {
+        width: 140px;
+    }
+}
+
+
+body {
+    margin: 0;
+    background: #1d1717;
+    font-family: "Segoe UI", sans-serif;
+}
+
+/* Главный экран */
+.hero {
+    min-height: calc(100vh - 90px);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+
+    background: radial-gradient(circle, #4a362d 0%, #1d1717 80%);
+}
+
+/* Верхний текст */
+.heroTop {
+    color: #c9a24a;
+    letter-spacing: 8px;
+    font-size: 16px;
+    margin-bottom: 25px;
+    font-weight: 600;
+}
+
+/* Заголовок */
+.hero h1 {
+    color: white;
+    font-size: 82px;
+    line-height: 1.1;
+    font-family: Georgia, serif;
+    font-weight: 500;
+    margin: 0;
+}
+
+.hero h1 span {
+    color: #c9a24a;
+}
+
+/* Описание */
+.heroText {
+    color: #bdb7b7;
+    font-size: 28px;
+    max-width: 850px;
+    line-height: 1.7;
+    margin: 35px 0 55px;
+}
+
+/* Кнопки */
+.heroBtns {
+    display: flex;
+    gap: 25px;
+}
+
+.heroBtn1 {
+    width: 270px;
+    height: 70px;
+    background: #c9a24a;
+    color: white;
+    border: none;
+    border-radius: 10px;
+    font-size: 24px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: .3s;
+}
+
+.heroBtn1:hover {
+    background: #b58f3f;
+}
+
+.heroBtn2 {
+    width: 270px;
+    height: 70px;
+    background: transparent;
+    color: white;
+    border: 1px solid rgba(255,255,255,.2);
+    border-radius: 10px;
+    font-size: 24px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: .3s;
+}
+
+.heroBtn2:hover {
+    background: rgba(255,255,255,.08);
+}
+
+
+
+
+
+
+
+body{
+    margin:0;
+    background:#f6f2ef;
+    font-family:Segoe UI,sans-serif;
+}
+
+.register{
+    min-height:100vh;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    padding:40px 20px;
+}
+
+.registerCard{
+    width:560px;
+    background:rgb(153, 149, 149);
+    border-radius:10px;
+    padding:45px 55px;
+    box-shadow:0 0 30px rgba(0,0,0,.08);
+}
+
+.registerCard h1{
+    text-align:center;
+    font-size:48px;
+    font-family:Georgia,serif;
+    margin:0;
+    color:#231f20;
+}
+
+.subtitle{
+    text-align:center;
+    color:#999;
+    font-size:20px;
+    margin-top:10px;
+    margin-bottom:45px;
+}
+
+.registerCard label{
+    display:block;
+    margin-bottom:10px;
+    margin-top:22px;
+    font-size:19px;
+    font-weight:700;
+    color:#555;
+}
+
+.registerCard input{
+    width:100%;
+    height:65px;
+    border:1px solid #ddd;
+    border-radius:16px;
+    padding:0 20px;
+    font-size:20px;
+    outline:none;
+    box-sizing:border-box;
+    transition:.3s;
+}
+.regis{
+       width:100%;
+    height:65px;
+    border:1px solid #ddd;
+    border-radius:16px;
+    padding:0 20px;
+    font-size:20px;
+    outline:none;
+    box-sizing:border-box;
+    transition:.3s;
+    background-color: white;
+}
+
+.registerCard input:focus{
+    border:2px solid #c9a24a;
+}
+
+.registerBtn{
+    width:100%;
+    height:68px;
+    margin-top:40px;
+    border:none;
+    border-radius:15px;
+    background:#201b1b;
+    color:white;
+    font-size:26px;
+    font-weight:bold;
+    cursor:pointer;
+    transition:.3s;
+}
+
+.registerBtn:hover{
+    background:#000;
+}
+
+.loginText{
+    margin-top:30px;
+    text-align:center;
+    color:#f7f4f4;
+    font-size:18px;
+}
+
+.loginText span{
+    color:#c9a24a;
+    font-weight:700;
+    cursor:pointer;
+}
+
+
+
+
+
+
+
+
+
+.menuTitle{
+    font-size:60px;
+    font-family:Georgia,serif;
+    margin-bottom:10px;
+}
+
+.menuSubTitle{
+    font-size:24px;
+    color:#8b8b8b;
+    margin-bottom:35px;
+}
+
+.categoryBar{
+    display:flex;
+    gap:15px;
+    margin-bottom:40px;
+    flex-wrap:wrap;
+}
+
+.categoryBtn{
+    padding:14px 35px;
+    border-radius:40px;
+    border:1px solid #ddd;
+    background:white;
+    font-size:20px;
+    cursor:pointer;
+    transition:.3s;
+}
+
+.activeCategory{
+    background:#1f1b1b;
+    color:white;
+}
+
+.foodGrid{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(420px,1fr));
+    gap:35px;
+}
+
+.foodCard{
+    border-radius:25px;
+    overflow:hidden;
+    background:white;
+    box-shadow:0 10px 30px rgba(0,0,0,.08);
+}
+
+.foodImage{
+    height:220px;
+    background:#f8efe4;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    font-size:90px;
+}
+
+.foodBody{
+    padding:30px;
+}
+
+.foodBadge{
+    display:inline-block;
+    background:#ffe6a8;
+    color:#d18b00;
+    padding:8px 16px;
+    border-radius:30px;
+    margin-bottom:18px;
+    font-weight:bold;
+}
+
+.foodBody h2{
+    font-size:40px;
+    margin:10px 0;
+    font-family:Georgia,serif;
+}
+
+.foodBody p{
+    color:#7d7d7d;
+    font-size:22px;
+    line-height:1.5;
+}
+
+.foodBottom{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    margin-top:30px;
+}
+
+.foodBottom h3{
+    font-size:40px;
+}
+
+.basketBtn{
+    background:#1f1b1b;
+    color:white;
+    border:none;
+    border-radius:12px;
+    padding:15px 28px;
+    font-size:20px;
+    cursor:pointer;
+}
+
+.basketInfo{
+    margin-top:20px;
+    display:flex;
+    align-items:center;
+    gap:10px;
+}
+
+.basketSmall{
+    width:40px;
+    height:40px;
+    border:none;
+    border-radius:8px;
+    background:#c9a24a;
+    color:white;
+    cursor:pointer;
+}
+
+.basketInfo span{
+    font-size:22px;
+    font-weight:bold;
+}
+
+.basketInfo b{
+    color:#2aa64b;
+}
+
+
+
+
+
+
+
+.cartPage{
+    padding:40px;
+    background:#f7f4f1;
+    min-height:100vh;
+}
+
+.cartTitle{
+    font-size:50px;
+    font-family:Georgia,serif;
+}
+
+.cartSub{
+    color:#888;
+    font-size:22px;
+    margin-bottom:30px;
+}
+
+.cartContainer{
+    display:flex;
+    flex-direction:column;
+    gap:25px;
+}
+
+.cartItem{
+    background:white;
+    border-radius:25px;
+    padding:30px;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    box-shadow:0 8px 20px rgba(0,0,0,.06);
+}
+
+.cartLeft{
+    display:flex;
+    align-items:center;
+    gap:25px;
+}
+
+.cartIcon{
+    width:80px;
+    height:80px;
+    border-radius:20px;
+    background:#fff5ea;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    font-size:50px;
+}
+
+.cartInfo h3{
+    margin:0;
+    font-size:32px;
+    font-family:Georgia,serif;
+}
+
+.cartInfo p{
+    color:#777;
+    font-size:22px;
+    margin-top:10px;
+}
+
+.cartRight{
+    display:flex;
+    align-items:center;
+    gap:35px;
+}
+
+.cartCounter{
+    display:flex;
+    align-items:center;
+    gap:15px;
+}
+
+.counterBtn{
+    width:45px;
+    height:45px;
+    border:none;
+    border-radius:10px;
+    background:#201b1b;
+    color:white;
+    font-size:24px;
+    cursor:pointer;
+}
+
+.cartCounter span{
+    font-size:28px;
+    font-weight:bold;
+}
+
+.cartRight h2{
+    min-width:100px;
+    font-size:36px;
+}
+
+.deleteBtn{
+    width:55px;
+    height:55px;
+    border:none;
+    border-radius:15px;
+    background:#ffe8ea;
+    color:#ff4d6d;
+    font-size:28px;
+    cursor:pointer;
+}
+
+.summaryCard{
+    background:white;
+    border-radius:25px;
+    padding:35px;
+    box-shadow:0 8px 20px rgba(0,0,0,.06);
+}
+
+.summaryRow{
+    display:flex;
+    justify-content:space-between;
+    padding:20px 0;
+    border-bottom:1px solid #eee;
+    font-size:24px;
+}
+
+.free{
+    color:#2ebf5b;
+    font-weight:bold;
+}
+
+.checkoutBtn{
+    width:100%;
+    margin-top:30px;
+    height:70px;
+    border:none;
+    border-radius:15px;
+    background:#c7a04b;
+    color:white;
+    font-size:26px;
+    font-weight:bold;
+    cursor:pointer;
+}
