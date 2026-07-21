@@ -152,52 +152,8 @@ function Menutwo() {
                     </div>
                 </nav>
             </div>
-            <style>{`
-                .menu-btn {
-                    display: inline-block;
-                    padding: 10px 20px;
-                    font-size: 16px;
-                    background-color: #373030;
-                    color: #9e9e9e;
-                    border: none;
-                    border-radius: 20px;
-                    cursor: pointer;
-                    margin: 5px;
-                    font-weight: 500;
-                    user-select: none;
-                    transition: background-color 0.2s;
-                }
 
-                /* Кнопка категории горит красным, если она выбрана */
-                .menu-btn.active {
-                    background-color: #ff3b30;
-                    color: white;
-                }
 
-                /* Стили для нижней навигации */
-                .bottom {
-                    display: flex;
-                    justify-content: space-around;
-                    position: fixed;
-                    bottom: 0;
-                    left: 0;
-                    width: 100%;
-                    background: #222;
-                    padding: 10px 0;
-                }
-                .bottom div {
-                    color: #9e9e9e;
-                    cursor: pointer;
-                    text-align: center;
-                }
-                /* Активная вкладка снизу тоже подсвечивается */
-                .bottom div.selected {
-                    color: #c9a24a;
-                    font-weight: bold;
-                }
-            `}</style>
-
-            {/*  ГЛАВНАЯ */}
             {activeTab === "home" && (
                 <div>
                     <h1>Башкы баракча</h1>
@@ -539,7 +495,6 @@ function Menutwo() {
                 </div>
             )}
 
-            {/*  ЗАКАЗОВ */}
             {activeTab === "orders" && (
                 <div>
                     <h1>Заказдар</h1>
@@ -547,7 +502,7 @@ function Menutwo() {
                 </div>
             )}
 
-            {/*  ПРОФИЛЯ */}
+            {/*  ПРОФИЛь */}
             {activeTab === "profile" && (
                 <div className="register">
                     <div className="registerCard">
@@ -581,7 +536,6 @@ function Menutwo() {
             )}
 
 
-            {/* НИЖНЯЯ НАВИГАЦИЯ */}
             <div className="bottom7">
 
                 <div className={activeTab === "menu" ? "selected" : ""} onClick={() => setActiveTab("menu")}>
